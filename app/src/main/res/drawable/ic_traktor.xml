@@ -1,0 +1,11 @@
+<!-- ic_traktor.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="@color/primary_blue">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M18,10h-4V6c0,-1.1 -0.9,-2 -2,-2H4C2.9,4 2,4.9 2,6v12c0,1.1 0.9,2 2,2h2.18c0.18,0.31 0.4,0.6 0.65,0.84C7.6,21.46 8.77,22 10,22s2.4,-0.54 3.17,-1.16c0.25,-0.24 0.47,-0.53 0.65,-0.84H16c1.1,0 2,-0.9 2,-2v-8zM10,20c-1.1,0 -2,-0.9 -2,-2s0.9,-2 2,-2 2,0.9 2,2 -0.9,2 -2,2zM16,18h-1.82c-0.18,-0.31 -0.4,-0.6 -0.65,-0.84C12.77,16.54 11.6,16 10,16s-2.77,0.54 -3.53,1.16c-0.25,0.24 -0.47,0.53 -0.65,0.84H4V6h8v12zM22,14c0,1.1 -0.9,2 -2,2s-2,-0.9 -2,-2 0.9,-2 2,-2 2,0.9 2,2z"/>
+</vector>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "693014760426",
+    "project_id": "sitandes-cf56d",
+    "storage_bucket": "sitandes-cf56d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693014760426:android:f48c13809e237c35444093",
+        "android_client_info": {
+          "package_name": "com.example.sitandes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWXncb1UdEMWII07OC2FwSjYPPvLvhB8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

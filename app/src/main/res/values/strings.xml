@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Sitandes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_picture">Foto Profil</string>
+    <string name="back_button">Back</string>
+
+    <!-- Beranda -->
+    <string name="selamat_datang_desa">Selamat Datang di Desa Kampunganyar</string>
+    <string name="subtitle_beranda">Mudahkan aktivitas bertani dengan sistem peminjaman alat modern</string>
+    <string name="search_hint">Cari alat pertanian yang ingin dipinjam</string>
+
+    <!-- Cuaca -->
+    <string name="cuaca_hari_ini">Cuaca Hari Ini</string>
+    <string name="cuaca_cerah">Cerah, 28°C</string>
+    <string name="info_cuaca_cocok">Cocok untuk aktivitas pertanian</string>
+    <string name="info_cuaca_hujan">Tidak disarankan untuk aktivitas outdoor</string>
+
+    <!-- Action Buttons -->
+    <string name="tutorial_alat">Tutorial Alat</string>
+    <string name="riwayat_saya">Riwayat Saya</string>
+
+    <!-- Peminjaman -->
+    <string name="peminjaman_terakhir">Peminjaman Terakhir</string>
+    <string name="status_sedang_dipinjam">Sedang Dipinjam</string>
+    <string name="status_selesai">Selesai</string>
+    <string name="status_terlambat">Terlambat</string>
+
+    <!-- Alat Pertanian -->
+    <string name="alat_tersedia">Alat Pertanian Tersedia</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="traktor_kubota">Traktor Kubota L2501</string>
+    <string name="bajak_singkal">Bajak Singkal</string>
+    <string name="mesin_semprot">Mesin Semprot</string>
+    <string name="mesin_panen">Mesin Panen Padi</string>
+
+    <!-- Format Tanggal -->
+    <string name="format_tanggal_peminjaman">Dipinjam: %1$s - %2$s</string>
+
+    <!-- Status Ketersediaan -->
+    <string name="tersedia">Tersedia</string>
+    <string name="tidak_tersedia">Tidak Tersedia</string>
+    <string name="sedang_dipinjam_user">Sedang Dipinjam</string>
+</resources>

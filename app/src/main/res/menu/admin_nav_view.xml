@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/berandaAdmin"
+        android:title="Beranda Admin"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/alatAdmin"
+        android:title="Kelola Alat"
+        android:icon="@drawable/ic_alat"
+        android:enabled="true"/>
+
+
+    <item
+        android:id="@+id/profilAdmin"
+        android:title="Profil Admin"
+        android:icon="@drawable/ic_person"
+        android:enabled="true"/>
+</menu>

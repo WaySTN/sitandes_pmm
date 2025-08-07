@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Warna background merah -->
+    <solid android:color="#FFEB3B"/> <!-- Merah untuk status habis -->
+
+    <!-- Sudut membulat -->
+    <corners android:radius="8dp"/>
+
+    <!-- Padding agar teks tidak mepet -->
+    <padding
+        android:left="8dp"
+        android:top="4dp"
+        android:right="8dp"
+        android:bottom="4dp"/>
+
+    <!-- Border lebih gelap -->
+    <stroke
+        android:width="1dp"
+        android:color="#CDDC39"/>
+</shape>

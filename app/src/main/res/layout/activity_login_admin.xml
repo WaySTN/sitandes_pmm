@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Logo Aplikasi"/>
+
+    <!-- Judul Selamat Datang Admin -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Selamat Datang Admin"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Label Email Admin -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Admin"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Input Email Admin -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/green_light"
+        app:hintTextColor="@color/gray_light"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidthFocused="1.5dp"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAdminEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="contoh@email.com"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            tools:ignore="TextFields"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Label Password Admin -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kata Sandi Admin"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Input Password Admin -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/green_light"
+        app:hintTextColor="@color/gray_light"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/green_light"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidthFocused="1.5dp"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPasswordAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            tools:ignore="TextFields"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tombol Masuk Admin -->
+    <Button
+        android:id="@+id/btnLoginAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green_light"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Text Login sebagai User -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User? "
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvUserLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login disini"
+            android:textColor="@color/green_dark"/>
+    </LinearLayout>
+
+</LinearLayout>

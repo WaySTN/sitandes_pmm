@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- State saat button ditekan -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#45A049" />
+            <stroke
+                android:width="2dp"
+                android:color="#388E3C" />
+            <!-- Shadow effect -->
+            <gradient
+                android:startColor="#4CAF50"
+                android:endColor="#45A049"
+                android:angle="135" />
+        </shape>
+    </item>
+
+    <!-- State normal -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4CAF50" />
+            <stroke
+                android:width="2dp"
+                android:color="#66BB6A" />
+            <!-- Gradient untuk efek 3D -->
+            <gradient
+                android:startColor="#66BB6A"
+                android:centerColor="#4CAF50"
+                android:endColor="#43A047"
+                android:angle="135" />
+        </shape>
+    </item>
+
+</selector>

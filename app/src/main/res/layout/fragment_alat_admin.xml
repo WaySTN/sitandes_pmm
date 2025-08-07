@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.alat.admin.AlatAdminFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <!-- Search and Add Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:startIconDrawable="@drawable/ic_search"
+                app:startIconTint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/searchAlatAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cari alat pertanian..."
+                    android:textColor="@color/black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTambahAlat"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:text="Tambah"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_add"
+                android:drawableTint="@color/white"
+                android:drawablePadding="4dp"
+                app:backgroundTint="@color/green_light"
+                app:cornerRadius="8dp"
+                style="@style/Widget.MaterialComponents.Button"/>
+        </LinearLayout>
+
+        <!-- Filter Chips -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:singleSelection="false"
+            app:chipSpacingHorizontal="8dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSemua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semua"
+                android:checkable="true"
+                android:checked="true"
+                app:chipBackgroundColor="@color/background_primary"
+                app:chipStrokeColor="@color/green_light"
+                app:chipStrokeWidth="1dp"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTersedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tersedia"
+                android:checkable="true"
+                app:chipBackgroundColor="@color/background_primary"
+                app:chipStrokeColor="@color/green_light"
+                app:chipStrokeWidth="1dp"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipHabis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habis"
+                android:checkable="true"
+                app:chipBackgroundColor="@color/background_primary"
+                app:chipStrokeColor="@color/green_light"
+                app:chipStrokeWidth="1dp"/>
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Empty State -->
+        <LinearLayout
+            android:id="@+id/layout_empty_alat_admin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_agriculture"
+                android:alpha="0.5"
+                app:tint="@color/gray_dark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum ada alat pertanian"
+                android:textColor="@color/gray_dark"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tambahkan alat pertanian pertama Anda"
+                android:textColor="@color/gray_medium"
+                android:textSize="14sp"
+                android:gravity="center"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTambahPertama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tambah Alat"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_add"
+                android:drawableTint="@color/white"
+                android:drawablePadding="8dp"
+                app:backgroundTint="@color/green_light"
+                app:cornerRadius="8dp"
+                style="@style/Widget.MaterialComponents.Button"/>
+        </LinearLayout>
+
+        <!-- Agricultural Tools List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAlatAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="72dp"
+            tools:listitem="@layout/item_alat_admin"/>
+    </LinearLayout>
+</FrameLayout>
